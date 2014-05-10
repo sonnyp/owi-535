@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var owi535 = require('../lib/owi535');
+
+var arm = owi535.getArm();
+if (!arm)
+  return console.error('No arm found.');
+
+var nomnom = require('nomnom');
+var opts = nomnom
+  .script('owi535')
+  .option('method', {
+    position: '0',
+    help: 'What to do',
+    required: true
+  })
+  .option('time', {
+    position: '1',
+    help: 'for how long in ms, default 500',
+    default: 500
+  })
+  .parse();
+
+arm.exec(opts.method, opts.time);
+
+process.on('exit', function() {
+  arm.stop();
+});
+
+process.on( 'SIGINT', function() {
+  arm.stop();
+  process.exit();
+});

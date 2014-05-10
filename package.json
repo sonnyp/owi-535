@@ -1,0 +1,29 @@
+{
+  "name": "owi-535",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "usb": "~0.3.11",
+    "nomnom": "~1.6.2"
+  },
+  "index": "lib/owi535",
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sonnyp/owi-535.git"
+  },
+  "keywords": [
+    "usb",
+    "arm",
+    "robot"
+  ],
+  "author": "Sonny Piers <sonny@fastmail.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonnyp/owi-535/issues"
+  },
+  "homepage": "https://github.com/sonnyp/owi-535"
+}
