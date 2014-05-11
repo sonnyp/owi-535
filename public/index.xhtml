@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OWI-535 remote</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="controllers.css"/>
+    <script type="application/javascript" src="libs/conducto.js"/>
+    <script type="application/javascript" src="commands.js"/>
+    <script type="application/javascript" src="script.js"/>
+  </head>
+  <body>
+
+    <button data-type="light" data-action="light-on"/>
+
+    <button data-type="stop" data-action="stop"/>
+
+    <div id="controls">
+
+      <d-pad data-dir="both">
+        <left data-action="base-left"/>
+        <right data-action="base-right"/>
+        <up data-action="shoulder-up"/>
+        <down data-action="shoulder-down"/>
+        <!-- <div class="button down" data-action="shoulder-down"/> -->
+        <!-- <div class="button left" data-action="base-left"/> -->
+        <!-- <div class="button right" data-action="base-right"/> -->
+      </d-pad>
+
+      <d-pad data-dir="vertical">
+        <up data-action="elbow-up"/>
+        <down data-action="elbow-down"/>
+      </d-pad>
+
+      <d-pad data-dir="vertical">
+        <up data-action="wrist-up"/>
+        <down data-action="wrist-down"/>
+      </d-pad>
+
+      <buttonset data-dir="vertical">
+        <button data-type="open" data-action="grip-open"/>
+        <button data-type="close" data-action="grip-close"/>
+      </buttonset>
+
+    </div>
+  </body>
+</html>

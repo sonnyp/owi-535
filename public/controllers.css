@@ -1,0 +1,82 @@
+d-pad {
+  position: relative;
+}
+
+d-pad[data-dir=both] {
+  width: 200px;
+  height: 200px;
+  background-image: url('d-pad-both.png');
+}
+
+d-pad[data-dir=vertical] {
+  width: 100px;
+  height: 200px;
+  background-image: url('d-pad-vertical.png');
+}
+
+d-pad left, d-pad right {
+  width: 54px;
+  height: 68px;
+}
+
+d-pad up, d-pad down {
+  width: 68px;
+  height: 54px;
+}
+
+d-pad left, d-pad right, d-pad up, d-pad down {
+  cursor: pointer;
+  position: absolute;
+}
+
+d-pad up {
+  top: 12px;
+}
+d-pad down {
+  bottom: 12px;
+}
+d-pad[data-dir=both] up, d-pad[data-dir=both] down {
+  left: 66px;
+}
+d-pad[data-dir=vertical] up, d-pad[data-dir=vertical] down {
+  left: 16px;
+}
+
+d-pad left {
+  left: 12px;
+  top: 66px;
+}
+
+d-pad right {
+  right: 12px;
+  top: 66px;
+}
+
+buttonset {
+  width: 150px;
+  height: 200px;
+}
+
+buttonset button {
+  background-color: inherit;
+  border: none;
+}
+
+buttonset button {
+  width: 95px;
+  height: 68px;
+  cursor: pointer;
+}
+
+buttonset[data-dir=vertical] button {
+  display: block;
+  margin: auto
+}
+
+buttonset button[data-type=open] {
+  background-image: url('button-open.png');
+}
+
+buttonset button[data-type=close] {
+  background-image: url('button-close.png');
+}

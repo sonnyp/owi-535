@@ -1,10 +1,11 @@
 {
   "name": "owi-535",
   "version": "0.0.0",
-  "description": "",
+  "description": "Applications and libraries for OWI-535 aka. Robotic Arm Edge",
   "dependencies": {
-    "usb": "~0.3.11",
-    "nomnom": "~1.6.2"
+    "conducto": "0.0.4",
+    "nomnom": "~1.6.2",
+    "usb": "~0.3.11"
   },
   "index": "lib/owi535",
   "devDependencies": {},
